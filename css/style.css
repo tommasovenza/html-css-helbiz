@@ -96,4 +96,28 @@ h1 {
     padding: 50px;
 }
 
+/* two block central section */
+
+#two-blocks .container .box {
+    background-color: #fafafa;
+    text-align: center;
+    margin: 50px 0px;
+    color: #000;
+    padding: 50px 0;
+}
+
+#two-blocks .container .box .box-image img {
+    max-width: 400px;
+}
+
+#two-blocks .container .box-text p {
+    line-height: 40px;
+}
+
+#two-blocks .container .box-text a {
+    color: #2e39fe;
+    text-decoration: none;
+    line-height: 40px;
+}
+
 
