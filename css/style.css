@@ -1,3 +1,8 @@
+body {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
 nav {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;  
@@ -6,19 +11,16 @@ nav {
 nav ul {
     float: right;
 }
-
 /* creaimo un clearfix */
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
-
 nav ul li {
     display: inline-block;
     line-height: 25px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #000;
@@ -26,21 +28,17 @@ nav ul li a {
     padding: 10px;
     letter-spacing: 0.5px;
 }
-
 nav li a:hover {
     border: 2px solid #000;
     border-width: 2px;
-
 }
 
 #navbar.container {
-    width: 850px;
+    margin: 0 auto;
 }
-
 #navbar {
     background-color: #fff;
     line-height: 50px;
-
 }
 
 #navbar .logo img {
@@ -48,13 +46,12 @@ nav li a:hover {
 }
 
 #navbar .ham-menu {
-        position: relative; 
+    position: relative; 
 }
 
 #navbar .fa-bars {
     display: none;
 }
-
 /* navbar centrale sparisce alla media query */
 @media all and (max-width: 992px) {
     #navbar .navbar-wrapper  {
@@ -71,5 +68,32 @@ nav li a:hover {
         top: 20px;
         right: 20px;
         font-size: 20px;
+        color: black;
     }
 }
+
+/* hero section CSS */
+
+h1 {
+    font-size: 56px;
+}
+
+#hero-section {
+    background-image: url(../img/hero-bg.jpg);
+    height: 60vh;
+    background-size: cover;
+}
+
+#hero-section .hero-content {
+    width: 700px;
+    margin: 0px auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero-section .hero-content .images {
+    display: inline-block;
+    padding: 50px;
+}
+
+

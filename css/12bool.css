@@ -208,7 +208,7 @@
 
 /* media queries risoluzione compresa tra 768px e 992px  */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 769px) and (max-width: 992px) {
     .col-md-1 {
         width: calc((100% / 12) * 1);
     }
@@ -290,7 +290,7 @@
 
 /* media queries framework > 992px */
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 993px) {
     .col-lg-1 {
         width: calc((100% / 12) * 1);
     }
@@ -330,7 +330,7 @@
 }
 /* offset framework > 992px */
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 993px) {
     .col-lg-offset-1 {
         margin-left: calc((100% / 12) * 1);
     }
