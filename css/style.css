@@ -80,14 +80,14 @@ h1 {
 
 #hero-section {
     background-image: url(../img/hero-bg.jpg);
-    height: 60vh;
+    height: 600px;
     background-size: cover;
 }
 
 #hero-section .hero-content {
     width: 700px;
     margin: 0px auto;
-    padding: 100px 0;
+    padding: 180px 0 0 50px;
     text-align: center;
 }
 
