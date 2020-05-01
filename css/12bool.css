@@ -1,0 +1,83 @@
+/* reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* proviamo a ricreare il framework con tanto di debug */
+
+.debug .container { 
+    border: 1px solid red;
+}
+/* le colonne interne al container */
+/* qui nel debug gli diamo l'altezza ed un bordo, così potremo visualizzarle, quando attiveremo o rimuoveremo la nostra griglia in base alla classe debug applicata al body */
+
+/* quindi: tutte le classi che al proprio interno hanno i caratteri "col-" e sono discendenti della classe .debug avranno bordo blu un pixel, background rosa ed altezza che gli do io ora, 300px */
+.debug [class*="col-"] {
+    border: 1px solid blue;
+    background-color: pink;
+    height: 300px;
+}
+
+
+/* regole del container */
+/* il container sarà la nostra raw */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* le colonne interne al container */
+/* il nostro framework */
+
+/* oltre alla regola che crea le dimensioni delle colonne, devo crearne una ,generale, per farle flottare a sinistra */
+
+[class*="col-"] {
+    float: left;
+}
+
+/* torniamo ora al framework */
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+.col-10 {
+    width: calc((100% / 12) * 10);
+}
+.col-11 {
+    width: calc((100% / 12) * 11);
+}
+.col-12 {
+    width: calc((100% / 12) * 12);
+}
+
