@@ -82,6 +82,8 @@ h1 {
     background-image: url(../img/hero-bg.jpg);
     height: 600px;
     background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center center; */
 }
 
 #hero-section .hero-content {
@@ -99,17 +101,23 @@ h1 {
 /* two block central section */
 
 #two-blocks .container .box {
+    margin: 50px 0;
+}
+
+#two-blocks .container .box.left {
+    padding-right: 30px;
+}
+
+#two-blocks .container .box.right {
+    padding-left: 30px;
+}
+
+#two-blocks .container .box .box-text {
     background-color: #fafafa;
     text-align: center;
-    margin: 50px 0px;
     color: #000;
-    padding: 50px 0;
+    padding: 50px;
 }
-
-#two-blocks .container .box .box-image img {
-    max-width: 400px;
-}
-
 #two-blocks .container .box-text p {
     line-height: 40px;
 }
@@ -119,5 +127,13 @@ h1 {
     text-decoration: none;
     line-height: 40px;
 }
+
+#two-blocks .container .box img {
+    max-width: 430px;
+}
+
+
+
+
 
 
