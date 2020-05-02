@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-helbiz</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,107 +29,89 @@
 <body class="">
 
     <header>
-        <div id="navbar" class="container">
-            <!-- logo -->
-            <div class="logo col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                <img src="img/helbiz-new-logo-black.svg" alt="logo-nero">
-            </div>
-            <!-- navbar centrale -->
-            <div class="navbar-wrapper col-lg-6 clearfix">
-                <nav>
-                    <ul>
-                        <li><a href="#">helbizgo</a></li>
-                        <li><a href="#">helbizcar</a></li>
-                        <li><a href="#">helbizair</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">cities</a></li>
-                        <li><a href="#">career</a></li>
-                        <li><a href="#">shop</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- navbar destra -->
-            <div class="col-lg-2 col-md-4 col-xs-4">
-                <div class="ham-menu">
-                    <i class="fas fa-bars"></i>
+        
+            <div id="navbar" class="container">
+
+                <!-- logo -->
+                <div class="logo col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
+                    <img src="img/helbiz-new-logo-black.svg" alt="logo-nero">
                 </div>
 
-                <div class="languages">
+                <!-- navbar centrale -->
+                <div class="navbar-wrapper col-lg-6 clearfix">
                     <nav>
                         <ul>
-                            <li><a href="#">eng</a></li>
-                            <li><a href="#">ita</a></li>
-                            <li><a href="#">es</a></li>
+                            <li><a href="#">helbizgo</a></li>
+                            <li><a href="#">helbizcar</a></li>
+                            <li><a href="#">helbizair</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">cities</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">shop</a></li>
                         </ul>
                     </nav>
                 </div>
+
+                <!-- navbar destra -->
+                <div class="col-lg-2 col-md-4 col-xs-4">
+                    <div class="ham-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <div class="languages">
+                        <nav>
+                            <ul>
+                                <li><a href="#">eng</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">ita</a></li>
+                                <li><span>|</span></li> 
+                                <li><a href="#">es</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </header>
-        <!-- hero section -->
-        <div class="container">
-            <div id="hero-section">
-                <div class="hero-content">
+
+            <!-- hero section, fuori dal container -->
+            <div class="hero-section">
+                <div class="wrapper-text">
                     <h1>Shared Mobility of Tomorrow</h1>
                     <p>Bringing the future of shared mobility to the streets of the world</p>
-                    <div class="images">
-                        <img src="img/header-app-store-badge.svg" alt="immagine">
-                        <img src="img/header-google-play-badge.svg" alt="immagine">
-                    </div>
+                    <img src="img/header-app-store-badge.svg" alt="immagine-app-store">
+                    <img src="img/header-google-play-badge.svg" alt="immagine-play-store">
                 </div>
             </div>
-        </div>
-    
+
+
+    </header>
 
     <main>
-        <section id="two-blocks">
+        <section id="prodotti">
+
             <div class="container">
-                <div class="col-lg-6 col-md-6 col-xs-12 box left">
-
-                    <div class="box-text">
-                        <h2>HelbizGO</h2>
-                        <p>Next generation of electric city bikes</p>
+                <div class="col-lg-6 col-md-6 col-xs-12 wrapper">
+                    <div class="box left">
+                        <h2>HelbizGo</h2>
+                        <p>Next Generation of electric city bikes</p>
                         <a href="#">Learn More ></a>
-
-                        <img src="img/HelbizGOxSegway.jpg" alt="bici">
+                        <img src="img/HelbizGOxSegway.jpg" alt="immagine-bicicletta">
+                    </div>    
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 wrapper">
+                    <div class="box right">
+                        <h2>HelbizBike</h2>
+                        <p>Seamless E-Scooter sharing globally</p>
+                        <a href="#">Coming Soon</a>
+                        <img src="img/HelbizBike-2.jpg" alt="bicicletta">
                     </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-xs-12 box right">
-
-                    <div class="box-text">
-                        <h2>HelbizGO</h2>
-                        <p>Next generation of electric city bikes</p>
-                        <a href="#">Learn More ></a>
-                        <img src="img/HelbizBike-2.jpg" alt="bici">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="work">
-            <!-- lo sfondo -->
-            <div class="sfondo"></div>
-            <div class="iphone">
-                <img src="img/iphone.png" alt="immagine iphone">
-            </div>
-            <div class="container">
-                <div class="col-lg-3 col-lg-offset-1 box">
-                    <h2>How does Helbiz work?</h2>
-                </div>
-
-                <div class="col-lg-3 col-lg-offset-4 box">
-                    <h4>Step 1</h4>
-                    <p>Leave curbside when finished</p>
+                    
                 </div>
             </div>
         </section>
-
-
     </main>
+    
 
-
+    
 </body>
-
 </html>

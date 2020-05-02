@@ -1,51 +1,52 @@
-/* reset CSS */
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-/* proviamo a ricreare il framework con tanto di debug */
+/* debug */
 
-.debug .container { 
+/* .debug .container {
     border: 1px solid red;
 }
-/* le colonne interne al container */
-/* qui nel debug gli diamo l'altezza ed un bordo, così potremo visualizzarle, quando attiveremo o rimuoveremo la nostra griglia in base alla classe debug applicata al body */
 
-/* quindi: tutte le classi che al proprio interno hanno i caratteri "col-" e sono discendenti della classe .debug avranno bordo blu un pixel, background rosa ed altezza che gli do io ora, 300px */
 .debug [class*="col-"] {
+    background: pink;
     border: 1px solid blue;
-    background-color: pink;
-    height: 300px;
+
+    padding: 5px;
 }
 
+.debug [class*="col-"] > .container {
+    border: none;
+}
 
-/* regole del container */
-/* il container sarà la nostra raw */
+.debug [class*="col-"] > .container [class*="col-"] {
+    background-color: lightcoral;
+    border: 1px solid white;
+} */
+
+/* FRAMEWORK GENERICO */
+
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
+
 .container::after {
     content: '';
     display: table;
     clear: both;
 }
 
-/* le colonne interne al container */
-/* il nostro framework */
-
-/* oltre alla regola che crea le dimensioni delle colonne, devo crearne una ,generale, per farle flottare a sinistra */
-
 [class*="col-"] {
-    float: left;
+    float: left;    
 }
 
-/* torniamo ora al framework */
+/* framework */
+
 .col-1 {
-    width: calc((100% / 12) * 1);
+    width: calc(100% / 12);
 }
 .col-2 {
     width: calc((100% / 12) * 2);
@@ -60,7 +61,7 @@
     width: calc((100% / 12) * 5);
 }
 .col-6 {
-    width: calc((100% / 12) * 6);
+    width: 50%;
 }
 .col-7 {
     width: calc((100% / 12) * 7);
@@ -78,55 +79,10 @@
     width: calc((100% / 12) * 11);
 }
 .col-12 {
-    width: calc((100% / 12) * 12);
-}
-/* offset del framework */
-.col-offset-1 {
-    margin-left: calc((100% / 12) * 1);
-}
-.col-offset-2 {
-    margin-left: calc((100% / 12) * 2);
-}
-.col-offset-3 {
-    margin-left: calc((100% / 12) * 3);
-}
-.col-offset-4 {
-    margin-left: calc((100% / 12) * 4);
-}
-.col-offset-5 {
-    margin-left: calc((100% / 12) * 5);
-}
-.col-offset-6 {
-    margin-left: calc((100% / 12) * 6);
-}
-.col-offset-7 {
-    margin-left: calc((100% / 12) * 7);
-}
-.col-offset-8 {
-    margin-left: calc((100% / 12) * 8);
-}
-.col-offset-9 {
-    margin-left: calc((100% / 12) * 9);
-}
-.col-offset-10 {
-    margin-left: calc((100% / 12) * 10);
-}
-.col-offset-11 {
-    margin-left: calc((100% / 12) * 11);
-}
-.col-offset-12 {
-    margin-left: calc((100% / 12) * 12);
+    width: 100%
 }
 
-/* adattiamo il nostro framework alle media query che abbiamo scelto! */
-/* per i devices piccoli la risoluzione sarà inferiore ai 768px */
-/* per i devices medi la risoluzione sarà compresa tra 768px e 992px */
-/* per i devices larghi sarà maggiore di 992px */
-
-/* media queries per il framework */
-
-/* media queries risoluzione < 768px */
-
+/* cellulari e piccoli devices */
 @media all and (max-width: 768px) {
     .col-xs-1 {
         width: calc((100% / 12) * 1);
@@ -165,50 +121,48 @@
         width: calc((100% / 12) * 12);
     }
 }
-/* offset media queries < 768px */
-
+/* OFFSET cellulari e piccoli devices */
 @media all and (max-width: 768px) {
     .col-xs-offset-1 {
         margin-left: calc((100% / 12) * 1);
     }
     .col-xs-offset-2 {
-        margin-left: calc((100% / 12) * 2); 
+        margin-left: calc((100% / 12) * 2);
     }
     .col-xs-offset-3 {
         margin-left: calc((100% / 12) * 3);
     }
     .col-xs-offset-4 {
-        margin-left: calc((100% / 12) * 4); 
-    }     
+        margin-left: calc((100% / 12) * 4);
+    }
     .col-xs-offset-5 {
         margin-left: calc((100% / 12) * 5);
     }
     .col-xs-offset-6 {
-        margin-left: calc((100% / 12) * 6); 
-    } 
+        margin-left: calc((100% / 12) * 6);
+    }
     .col-xs-offset-7 {
         margin-left: calc((100% / 12) * 7);
     }
     .col-xs-offset-8 {
-        margin-left: calc((100% / 12) * 8); 
-    } 
+        margin-left: calc((100% / 12) * 8);
+    }
     .col-xs-offset-9 {
         margin-left: calc((100% / 12) * 9);
     }
     .col-xs-offset-10 {
-        margin-left: calc((100% / 12) * 10); 
-    } 
+        margin-left: calc((100% / 12) * 10);
+    }
     .col-xs-offset-11 {
         margin-left: calc((100% / 12) * 11);
     }
     .col-xs-offset-12 {
-        margin-left: calc((100% / 12) * 12); 
-    } 
+        margin-left: calc((100% / 12) * 12);
+    }
 }
 
-/* media queries risoluzione compresa tra 768px e 991px  */
-
-@media all and (min-width: 769px) and (max-width: 991px) {
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 991px) {
     .col-md-1 {
         width: calc((100% / 12) * 1);
     }
@@ -247,8 +201,7 @@
     }
 }
 
-/* offset risoluzione compresa tra 768px e 992px */
-
+/* OFFSET tablet */
 @media all and (min-width: 768px) and (max-width: 991px) {
     .col-md-offset-1 {
         margin-left: calc((100% / 12) * 1);
@@ -288,8 +241,7 @@
     }
 }
 
-/* media queries framework > 992px */
-
+/* desktop and large devices */
 @media all and (min-width: 992px) {
     .col-lg-1 {
         width: calc((100% / 12) * 1);
@@ -328,8 +280,7 @@
         width: calc((100% / 12) * 12);
     }
 }
-/* offset framework > 992px */
-
+/* OFFSET desktop and large devices */
 @media all and (min-width: 992px) {
     .col-lg-offset-1 {
         margin-left: calc((100% / 12) * 1);

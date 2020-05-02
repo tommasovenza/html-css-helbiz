@@ -3,6 +3,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+h1 {
+    font-size: 56px;
+    line-height: 85px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+/* fine typography */
+
 nav {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;  
@@ -28,147 +41,122 @@ nav ul li a {
     padding: 10px;
     letter-spacing: 0.5px;
 }
+nav ul li span {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
 nav li a:hover {
     border: 2px solid #000;
     border-width: 2px;
 }
 
 #navbar.container {
-    margin: 0 auto;
-}
-#navbar {
     background-color: #fff;
     line-height: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
-#navbar .logo img {
+.container .logo img {
     margin-top: 15px;
 }
-#navbar .ham-menu {
+.container .ham-menu {
     position: relative; 
 }
-#navbar .fa-bars {
+.container .fa-bars {
     display: none;
 }
 
 /* navbar centrale sparisce alla media query */
-@media all and (max-width: 992px) {
-    #navbar .navbar-wrapper  {
+@media all and (max-width: 991px) {
+    .container .navbar-wrapper  {
         display: none;
     }
     /* navbar laterale sparisce alla media query */
-    #navbar .languages {
+    .container .languages {
         display: none
     }
     /* hamburger menu compare */
-    #navbar .fa-bars {
+    .container .fa-bars {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 16px;
         right: 20px;
         font-size: 20px;
         color: black;
     }
 }
 
-/* hero section CSS */
+/* hero section */
 
-h1 {
-    font-size: 56px;
-}
-
-#hero-section {
+.hero-section {
     background-image: url(../img/hero-bg.jpg);
-    height: 600px;
     background-size: cover;
-    /* background-repeat: no-repeat;
-    background-position: center center; */
+    height: 80vh;
 }
 
-#hero-section .hero-content {
-    width: 700px;
-    margin: 0px auto;
-    padding: 180px 0 0 50px;
-    text-align: center;
-}
-
-#hero-section .hero-content .images {
-    display: inline-block;
-    padding: 50px;
-}
-
-/* two block central section */
-
-#two-blocks .container .box {
-    margin: 50px 0;
-}
-
-#two-blocks .container .box.left {
-    padding-right: 30px;
-}
-
-#two-blocks .container .box.right {
-    padding-left: 30px;
-}
-
-#two-blocks .container .box .box-text {
-    background-color: #fafafa;
-    text-align: center;
-    color: #000;
-    padding: 50px;
-}
-#two-blocks .container .box-text p {
-    line-height: 40px;
-}
-
-#two-blocks .container .box-text a {
-    color: #2e39fe;
-    text-decoration: none;
-    line-height: 40px;
-}
-
-#two-blocks .container .box img {
-    max-width: 430px;
-}
-
-@media all and (max-width: 767px) {
-    /* #two-blocks .container .box-text {
-        padding: 30 0px;
-    } */
-}
-
-
-/* section work */
-
-#work {
-    color: black;
-    position: relative;
-}
-
-#work .sfondo {
-    background-image: url(../img/HelbizBanner.jpg);
-    background-size: cover;
-    height: 500px;
-}
-
-#work .iphone {
-    margin-top: 100px;
+.hero-section .wrapper-text {
+    /* width: 800px; */
+    padding: 50px 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#work .iphone img {
-    max-width: 350px;
+.hero-section .wrapper-text img {
+    display: inline-block;
 }
 
-#work .container .bufala {
-    padding: 100px 0;
+/* sezione prodotti */
+
+#prodotti {
+    margin: 50px 0;
+    color: #000;
 }
 
+#prodotti img {
+    max-width: 430px;
+}
 
+#prodotti .container .wrapper .box {
+    padding: 50px;
+    text-align: center;
+    background-color: #fafafa;
+}
 
+#prodotti .container .wrapper .box.left {
+    margin-right: 20px;
+}
 
+#prodotti .container .wrapper .box.right {
+    margin-left: 20px;
+} 
 
+#prodotti .container .wrapper .box a {
+    display: block;
+    text-decoration: none;
+    color: #0007ff;
+}
 
+@media all and (max-width: 768px) {
+
+    #prodotti img {
+        max-width: 300px;
+    }
+
+    #prodotti .container .wrapper .box {
+        text-align: center;
+        background-color: #fafafa;
+    }
+    
+    #prodotti .container .wrapper .box.left {
+        margin-right: 0px;
+    }
+    
+    #prodotti .container .wrapper .box.right {
+        margin-left: 0px;
+    }
+} 
 
