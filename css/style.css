@@ -132,6 +132,36 @@ h1 {
     max-width: 430px;
 }
 
+/* section work */
+
+#work {
+    color: black;
+    position: relative;
+}
+
+#work .sfondo {
+    background-image: url(../img/HelbizBanner.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+#work .iphone {
+    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#work .iphone img {
+    max-width: 350px;
+}
+
+#work .container .bufala {
+    padding: 100px 0;
+}
+
+
 
 
 
