@@ -40,18 +40,16 @@ nav li a:hover {
     background-color: #fff;
     line-height: 50px;
 }
-
 #navbar .logo img {
     margin-top: 15px;
 }
-
 #navbar .ham-menu {
     position: relative; 
 }
-
 #navbar .fa-bars {
     display: none;
 }
+
 /* navbar centrale sparisce alla media query */
 @media all and (max-width: 992px) {
     #navbar .navbar-wrapper  {
@@ -131,6 +129,13 @@ h1 {
 #two-blocks .container .box img {
     max-width: 430px;
 }
+
+@media all and (max-width: 767px) {
+    /* #two-blocks .container .box-text {
+        padding: 30 0px;
+    } */
+}
+
 
 /* section work */
 
