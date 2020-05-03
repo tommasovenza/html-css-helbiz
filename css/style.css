@@ -160,3 +160,66 @@ nav li a:hover {
     }
 } 
 
+/* sezione iphone trasparente */
+
+#phone {
+    position: relative;
+    color: black;
+}
+
+#phone .sfondo {
+    background-image: url(../img/HelbizBanner.jpg);
+    height: 650px;
+    background-position-x: 30%;
+}
+
+#phone .phone img {
+    max-width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+#phone .container .box {
+    padding: 40px 0;
+}
+
+#phone .container .box h2 {
+    padding-left: 50px;
+    width: 245px;
+    font-size: 30px;
+}
+
+#phone .container .box p {
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+/* media queries */
+
+@media all and (max-width: 767px) {
+    #phone .phone img {
+        max-width: 300px;
+        left: 10%;
+    }
+
+    #phone .container .box {
+        padding: 0px 35px;
+    }
+
+    #phone .container .box h2 {
+        line-height: 40px;
+        margin: 30px 0;
+    }
+
+    #phone .container .box p {
+        padding-left: 50px;
+    }
+
+}
+
+@media all and (max-width: 375px) {
+    img {
+        max-width: 130px;
+    }
+}
