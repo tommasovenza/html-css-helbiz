@@ -197,9 +197,15 @@ nav li a:hover {
 
 /* media queries */
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 1024) {
     img {
-        max-width: 130px;
+        max-width: 600px;
+    }
+} */
+
+@media all and (max-width: 1200px) {
+    #phone .phone img {
+        left: 35%;
     }
 }
 
@@ -244,8 +250,12 @@ nav li a:hover {
 
 }
 
-
 @media all and (max-width: 500px) {
+
+    img {
+        max-width: 130px;
+    }
+
     #phone .phone img {
         /* max-width: 130px; */
         left: 10%;
