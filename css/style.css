@@ -401,3 +401,89 @@ nav li a:hover {
     color: #000;
     padding: 0 7px;
 }
+
+/* footer */
+
+footer {
+    padding: 100px 0;
+    background-color: #000;
+    font-family: 'Lato', sans-serif;
+    margin-top: 50px;
+}
+
+
+footer h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+footer ul {
+    margin-top: 30px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: #696969;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+footer .colophon .container {
+    margin-top: 50px;
+    border-top: 1px solid #69696986;
+    border-bottom: 1px solid #69696986;
+}
+
+footer .colophon .container .block:nth-child(2),
+footer .colophon .container .block:nth-child(3),
+footer .colophon .container .block:nth-child(4) {
+    margin-top: 15px;
+}
+
+footer .colophon .container ul {
+    margin-bottom: 30px;
+}
+
+footer .colophon .container ul li {
+    display: inline-block;
+    margin-right: 30px;  
+}
+
+footer .colophon .container ul li:last-child {
+    margin-right: 0px ;  
+}
+
+footer .colophon .container .social-icon {
+    padding: 15px
+}
+
+footer .colophon .container .social-icon li a {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .colophon .container li a {
+    color: #fff;
+    font-size: 13px;
+}
+
+footer .wrapper {
+    position: relative;
+    margin-top: 60px;
+}
+
+footer .wrapper .badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .wrapper .badge img {
+    display: inline-block;
+    padding: 0 5px;
+}
