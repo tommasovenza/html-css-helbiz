@@ -272,5 +272,90 @@ nav li a:hover {
     #phone .container .box p {
         padding-left: 50px;
     }    
+}
+
+/* sezione tre blocchi */
+
+/* le immagini di sfondo */
+#three-blocks .container .upper-block {
+    background-image: url(../img/ScooterHelbiz-2400.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+#three-blocks .container .left-block {
+    background: linear-gradient(#41566a,#252f38) 50% no-repeat;
+    margin-top: 30px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#three-blocks .container .right-block {
+    background-image: url(../img/Cities-1500.jpg);
+    margin-top: 30px;
+    padding-left: 15px;
+    height: 594px;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* lo stile dei tre blocchi */
+/* upper block */
+#three-blocks .upper-block .wrapper-text {
+    position: absolute;
+    top: 28%;
+    left: 60%;
+    max-width: 330px;
+    text-align: center;
+}
+
+#three-blocks .wrapper-text h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#three-blocks .wrapper-text p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+#three-blocks .wrapper-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* left block */
+
+#three-blocks .container .left-block .wrapper-text {
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    text-align: center;
+}
+#three-blocks .container .left-block a {
+    display: inline-block
 
 }
+
+#three-blocks .container .left-block img {
+    max-height: 390px;
+    margin-top: 200px;
+}
+
+/* right block */
+
+#three-blocks .container .right-block .wrapper-text {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    text-align: center;
+}
+#three-blocks .container .left-block a {
+    display: inline-block
+}
+
+
