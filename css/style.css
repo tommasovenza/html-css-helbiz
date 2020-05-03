@@ -340,7 +340,6 @@ nav li a:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-       
     }
     #three-blocks .wrapper-text h2 {
         font-size: 32px;
@@ -361,7 +360,6 @@ nav li a:hover {
 }
 #three-blocks .container .left-block a {
     display: inline-block
-
 }
 
 #three-blocks .container .left-block img {
@@ -377,10 +375,6 @@ nav li a:hover {
     left: 25%;
     text-align: center;
 }
-#three-blocks .container .left-block a {
-    display: inline-block
-}
-
 
 /* social banner centrale */
 
@@ -423,6 +417,29 @@ nav li a:hover {
 #social-banner .photo .wrapper a {
     color: #000;
     padding: 0 7px;
+}
+
+/* media queries social banner */
+
+/* margini icone fontawesome */
+
+@media all and (max-width: 1151px) {
+    #social-banner .photo .wrapper li {
+        margin-right: 20px;
+    }
+}
+
+/* padding wrapper bianco */
+@media all and (max-width: 600px) {
+    #social-banner .photo .wrapper {
+        padding: 40px 80px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    #social-banner .photo .wrapper {
+        padding: 20px;
+    }
 }
 
 /* footer */
