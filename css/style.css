@@ -80,7 +80,7 @@ nav li a:hover {
     .container .fa-bars {
         display: block;
         position: absolute;
-        top: 16px;
+        top: 15px;
         right: 20px;
         font-size: 20px;
         color: black;
@@ -197,12 +197,38 @@ nav li a:hover {
 
 /* media queries */
 
+@media all and (max-width: 500px) {
+    img {
+        max-width: 130px;
+    }
+}
+
 @media all and (max-width: 767px) {
     #phone .phone img {
         max-width: 300px;
-        left: 10%;
+        left: 30%;
     }
 
+    #phone .container .box {
+        padding: 0px 35px;
+    }
+
+    #phone .container .box h2 {
+        line-height: 40px;
+        margin: 30px 0 0 195px;
+    }
+
+    #phone .container .box p {
+        padding: 20px 0 0 245px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    #phone .phone img {
+        /* max-width: 130px; */
+        left: 22%;
+    }
     #phone .container .box {
         padding: 0px 35px;
     }
@@ -214,12 +240,27 @@ nav li a:hover {
 
     #phone .container .box p {
         padding-left: 50px;
-    }
+    }    
 
 }
 
-@media all and (max-width: 375px) {
-    img {
-        max-width: 130px;
+
+@media all and (max-width: 500px) {
+    #phone .phone img {
+        /* max-width: 130px; */
+        left: 10%;
     }
+    #phone .container .box {
+        padding: 0px 35px;
+    }
+
+    #phone .container .box h2 {
+        line-height: 40px;
+        margin: 30px 0;
+    }
+
+    #phone .container .box p {
+        padding-left: 50px;
+    }    
+
 }
