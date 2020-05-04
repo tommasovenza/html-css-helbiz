@@ -97,7 +97,6 @@ nav li a:hover {
 }
 
 .hero-section .wrapper-text {
-    /* width: 800px; */
     padding: 50px 0;
     position: absolute;
     top: 50%;
@@ -108,6 +107,32 @@ nav li a:hover {
 
 .hero-section .wrapper-text img {
     display: inline-block;
+}
+/* media queries h1 */
+@media all and (max-width: 500px) {
+    h1 { 
+        font-size: 44px;
+        line-height: 56px;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1 { 
+        line-height: 30px;
+        font-size: 32px;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 /* sezione prodotti */
@@ -141,6 +166,8 @@ nav li a:hover {
     color: #0007ff;
 }
 
+/* media queries */
+
 @media all and (max-width: 768px) {
 
     #prodotti img {
@@ -160,6 +187,13 @@ nav li a:hover {
         margin-left: 0px;
     }
 } 
+/* immagini iphone 5 iphone SE */
+@media all and (min-width: 350px) {
+
+    #prodotti .container .wrapper .box img {
+        max-width: 200px;
+    }
+}
 
 /* sezione iphone trasparente */
 
@@ -198,16 +232,15 @@ nav li a:hover {
 
 /* media queries */
 
-/* @media all and (max-width: 1024) {
-    img {
-        max-width: 600px;
-    }
-} */
 
 @media all and (max-width: 1200px) {
     #phone .phone img {
         left: 35%;
     }
+}
+
+@media all and (max-width: 1024) {
+    
 }
 
 @media all and (max-width: 767px) {
@@ -233,7 +266,6 @@ nav li a:hover {
 
 @media all and (max-width: 600px) {
     #phone .phone img {
-        /* max-width: 130px; */
         left: 22%;
     }
     #phone .container .box {
@@ -258,7 +290,6 @@ nav li a:hover {
     }
 
     #phone .phone img {
-        /* max-width: 130px; */
         left: 10%;
     }
     #phone .container .box {
