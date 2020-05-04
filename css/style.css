@@ -239,10 +239,6 @@ nav li a:hover {
     }
 }
 
-@media all and (max-width: 1024) {
-    
-}
-
 @media all and (max-width: 767px) {
     #phone .phone img {
         max-width: 300px;
